@@ -91,8 +91,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src="/public/logo.png" alt="" className="logo" />
-        <h1>MEMORY GAME </h1>
+        <div className="Header">
+          <img src="/logo.png" alt="" className="logo" />
+          <h1>MEMORY GAME </h1>
+        </div>
 
         <Game />
       </main>
