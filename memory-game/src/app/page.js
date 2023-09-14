@@ -6,11 +6,44 @@ import Grid from "../components/Grid";
 import Game from "../components/Game";
 import MyContext from "./MyContext";
 import "./page.css";
+import logo from "/public/logo.png";
 
 export default function Home() {
   return (
     <>
       <Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/android-chrome-512x512.png"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+
         <meta
           name="description"
           content="Memory est une application react nextJs. C'est un jeu de memoire. Vous devez retrouver les 2 cartes identiques, parmi un jeu de 16.Selectionnez les. Si vous trouvez un jeu identique, vous gagnez un point, sinon vous devez recommencer. La partie s'arrete lorsque vous avez decouvert toutes les cartes. A vous de jouer"
@@ -30,7 +63,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://github.com/Delphine2669/gradient_generator/raw/dev/gradient-generator/src/assets/gradientGenerator.png"
+          content="https://github.com/Delphine2669/memory-game/raw/dev/memory-game/public/assets/MemoryScreen.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -52,13 +85,14 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://github.com/Delphine2669/gradient_generator/raw/dev/gradient-generator/src/assets/gradientGenerator.png"
+          content="https://github.com/Delphine2669/memory-game/raw/dev/memory-game/public/assets/MemoryScreen.png"
         />
         <title>Memory Game</title>
       </Head>
 
       <main>
-        <h1>Memory Game !</h1>
+        <img src="/public/logo.png" alt="" className="logo" />
+        <h1>MEMORY GAME </h1>
 
         <Game />
       </main>

@@ -13,7 +13,7 @@ function Game() {
     "assets/tyrion.png",
     "assets/brienne.png",
   ];
-  const [count, setCount] = useState(0);
+  const [points, setPoints] = useState(0);
   const [chosenCards, setChosenCards] = useState([]);
   const [imagesArray, setImagesArray] = useState([]);
   const [chosenCardsIds, setChosenCardsIds] = useState([]);
@@ -76,7 +76,7 @@ function Game() {
   return (
     <div>
       <div className="card-header">
-        <h4 className="counter">Points:{count}</h4>
+        <h4 className="counter">Points:{points}</h4>
         <button onClick={startOver} className="button-start-over">
           Start over
         </button>
