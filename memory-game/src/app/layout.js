@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:url"
-          content="https://gradient-generator.delphine-t-2669.com"
+          content="https://memory-game.delphine-t-2669.com"
         />
         <meta
           property="og:description"
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:domain" content="delphine-t-2669.com/" />
         <meta
           property="twitter:url"
-          content="https://gradient-generator.delphine-t-2669.com"
+          content="https://memory-game.delphine-t-2669.com"
         />
         <meta
           name="twitter:title"
