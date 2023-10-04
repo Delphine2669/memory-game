@@ -1,6 +1,24 @@
 import { useState, useEffect } from "react";
+import toastr from "toastr";
 import { images } from "../app/data";
 import "./Game.css";
+toastr.options = {
+  closeButton: true,
+  debug: false,
+  newestOnTop: false,
+  progressBar: true,
+  positionClass: "toast-top-center",
+  preventDuplicates: false,
+  onclick: null,
+  showDuration: "300",
+  hideDuration: "1000",
+  timeOut: "5000",
+  extendedTimeOut: "1000",
+  showEasing: "swing",
+  hideEasing: "linear",
+  showMethod: "fadeIn",
+  hideMethod: "fadeOut",
+};
 function Game() {
   const BLANK_CARD = "assets/wall.jpeg";
   const images = [
@@ -17,6 +35,8 @@ function Game() {
   const [chosenCards, setChosenCards] = useState([]);
   const [imagesArray, setImagesArray] = useState([]);
   const [chosenCardsIds, setChosenCardsIds] = useState([]);
+  const [pairsUncovered, setPairsUncovered] = useState(0);
+  const [flips, setFlips] = useState(0);
   const [openCards, setOpenCards] = useState([]);
   function createCardBoard() {
     const imagesGenerated = images?.concat(...images);
@@ -25,6 +45,7 @@ function Game() {
     setImagesArray(shuffledArray);
   }
   function flipImage(image, index) {
+    setFlips((flips) => flips + 1);
     console.log(image, index);
 
     if (chosenCardsIds?.length === 1 && chosenCardsIds[0] === index) {
@@ -41,6 +62,14 @@ function Game() {
           setOpenCards((openCards) =>
             openCards?.concat([chosenCards[0], image])
           );
+          setPairsUncovered((pairsUncovered) => pairsUncovered + 1);
+        }
+        if (pairsUncovered + 1 === images.length) {
+          toastr.success(
+            `Bravo. Rejoue et essaye de le faire en moins de ${Math.floor(
+              flips / 2
+            )} coups `
+          );
         }
         setTimeout(() => {
           setChosenCardsIds([]);
@@ -49,6 +78,7 @@ function Game() {
       }
     }
   }
+
   function isCardChosen(image, index) {
     return chosenCardsIds?.includes(index) || openCards?.includes(image);
   }
@@ -78,6 +108,7 @@ function Game() {
     <div>
       <div className="card-header">
         <h4 className="counter">Points:{points}</h4>
+        <p className="flip-counter">Coups:{Math.floor(flips / 2)}</p>
         <button onClick={startOver} className="button-start-over">
           Start over
         </button>

@@ -1,3 +1,4 @@
+@import "~toastr/build/toastr.css";
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -12,8 +13,9 @@ img {
   border: solid 2px white;
   border-radius: 5px;
 }
+.flip-counter,
 .counter {
-  margin-left: 43.5dvw;
+  margin-left: 35dvw;
   padding: 2dvh 2vw;
   text-align: center;
   border-radius: 10px;
@@ -50,6 +52,7 @@ img {
     border: solid 2px white;
     border-radius: 5px;
   }
+  .flip-counter,
   .counter {
     margin-left: 43.5dvw;
     padding: 2dvh 2vw;
