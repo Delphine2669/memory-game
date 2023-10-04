@@ -67,6 +67,7 @@ function Game() {
     setChosenCards([]);
     setPoints(0);
     setOpenCards([]);
+    createCardBoard();
   }
 
   useEffect(() => {

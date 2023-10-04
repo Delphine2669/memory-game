@@ -1,18 +1,19 @@
 {
-    "workbench.colorCustomizations": {
-        "editorGroup.border": "#3333ff",
-        "panel.border": "#3333ff",
-        "sash.hoverBorder": "#3333ff",
-        "sideBar.border": "#3333ff",
-        "statusBar.background": "#0000ff",
-        "statusBar.border": "#0000ff",
-        "statusBar.debuggingBackground": "#ffff00",
-        "statusBar.debuggingBorder": "#ffff00",
-        "statusBarItem.hoverBackground": "#3333ff",
-        "statusBarItem.remoteBackground": "#0000ff",
-        "tab.activeBorder": "#3333ff",
-        "titleBar.activeBackground": "#0000ff",
-        "titleBar.border": "#0000ff",
-        "titleBar.inactiveBackground": "#0000ff99"
-    }
+  "workbench.colorCustomizations": {
+    "editorGroup.border": "#fbed80",
+    "panel.border": "#fbed80",
+    "sash.hoverBorder": "#fbed80",
+    "sideBar.border": "#fbed80",
+    "statusBar.background": "#f9e64f",
+    "statusBar.border": "#f9e64f",
+    "statusBar.debuggingBackground": "#4f62f9",
+    "statusBar.debuggingBorder": "#4f62f9",
+    "statusBarItem.hoverBackground": "#f7df1e",
+    "statusBarItem.remoteBackground": "#f9e64f",
+    "tab.activeBorder": "#fbed80",
+    "titleBar.activeBackground": "#f9e64f",
+    "titleBar.border": "#f9e64f",
+    "titleBar.inactiveBackground": "#f9e64f99"
+  },
+  "peacock.color": "#f9e64f"
 }
