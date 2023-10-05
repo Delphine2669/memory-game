@@ -97,6 +97,7 @@ function Game() {
     setChosenCards([]);
     setPoints(0);
     setOpenCards([]);
+    setFlips(0);
     createCardBoard();
   }
 
