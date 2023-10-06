@@ -1,21 +1,21 @@
 @import "~toastr/build/toastr.css";
-.card-container {
+
+.child-card-container {
   display: flex;
   flex-wrap: wrap;
   margin-left: 5dvw;
   gap: 4dvw;
-  width: 90dvw;
+  width: 100dvw;
 }
-.game-container {
+.child-game-container {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://www.esportsportal.com/wp-content/uploads/2019/06/game-of-thrones-a-telltale-games-series-hd-wallpapers-33155-7585082.png");
+  background-image: url("/assets/rainbow.jpg");
 }
-.img-fluid {
+.child-img-fluid {
   width: 13dvw;
   height: 12dvh;
-  border: solid 2.5dvw;
-  border-color: var(--yellow-color);
+  border: solid 2.5dvw var(--kids-color);
   border-radius: 5px;
 }
 .flip-counter,
@@ -34,21 +34,21 @@
   height: 6dvh;
   border-radius: 2dvw;
   align-self: center;
-  color: var(--yellow-color);
+  color: #f0c42d;
   background-color: black;
 }
-.card-header {
+.child-card-header {
   display: flex;
   flex-direction: column;
   padding: 2dvh;
 }
-.card {
+.child-card {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.card-text {
+.child-card-text {
   position: absolute;
   top: -20px;
   left: 0;
@@ -59,7 +59,7 @@
   padding: 5px;
 }
 @media screen and (min-width: 600px) {
-  .card-container {
+  .child-card-container {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15dvw;
@@ -67,11 +67,10 @@
     width: 77dvw;
   }
 
-  .img-fluid {
-    width: 13dvw;
-    height: 22dvh;
-    border: solid 1.4dvw;
-    border-color: var(--yellow-color);
+  .child-img-fluid {
+    width: 8dvw;
+    height: 20dvh;
+    border: solid 1.4dvw var(--kids-color);
     border-radius: 15px;
   }
   .flip-counter,
@@ -90,19 +89,19 @@
     border-radius: 2dvw;
     align-self: center;
   }
-  .card-header {
+  .child-card-header {
     display: flex;
     flex-direction: column;
     padding: 2dvh;
   }
 
-  .card {
+  .child-card {
     position: relative;
     overflow: hidden;
     width: 100%;
   }
 
-  .card-text {
+  .child-card-text {
     position: absolute;
     top: -17px;
     left: 0;

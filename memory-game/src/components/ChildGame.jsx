@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 import toastr from "toastr";
 
-import "./Game.css";
+import "./ChildGame.css";
 toastr.options = {
-  closeButton: true,
+  closeButton: false,
   debug: false,
   newestOnTop: false,
   progressBar: true,
   positionClass: "toast-top-center",
-  preventDuplicates: false,
-  onclick: null,
+  preventDuplicates: true,
   showDuration: "300",
   hideDuration: "1000",
   timeOut: "5000",
@@ -19,18 +18,15 @@ toastr.options = {
   showMethod: "fadeIn",
   hideMethod: "fadeOut",
 };
-function Game() {
-  const BLANK_CARD = "assets/GoT/throne.jpeg";
+function ChildGame() {
+  const BLANK_CARD = "assets/Kids/balloon.avif";
 
   const images = [
-    { name: "Arya", image: "assets/GoT/Arya.png" },
-    { name: "Cersei", image: "assets/GoT/cersei.png" },
-    { name: "Daenerys", image: "assets/GoT/daenerys.png" },
-    { name: "Jon Snow", image: "assets/GoT/johnSnow.png" },
-    { name: "Khal Drogo", image: "assets/GoT/khaldrogo.png" },
-    { name: "Sansa", image: "assets/GoT/sansa.png" },
-    { name: "Tyrion", image: "assets/GoT/tyrion.png" },
-    { name: "Brienne", image: "assets/GoT/brienne.png" },
+    { name: "Rond", image: "assets/Kids/circle.png" },
+    { name: "Coeur", image: "assets/Kids/heart.png" },
+    { name: "Carré", image: "assets/Kids/square.png" },
+    { name: "Etoile", image: "assets/Kids/star.png" },
+    { name: "Triangle", image: "assets/Kids/triangle.png" },
   ];
   const [points, setPoints] = useState(0);
   const [chosenCards, setChosenCards] = useState([]);
@@ -67,11 +63,11 @@ function Game() {
         if (pairsUncovered + 1 === images.length) {
           let message;
           if (flips % 2 === 0) {
-            message = `💪🏾Bravo. Rejoue et essaye de le faire en moins de ${Math.floor(
+            message = `Bravo tu as retrouvé tous les symboles 🎊 en ${Math.floor(
               flips / 2
             )} coups`;
           } else {
-            message = `💪🏾 Bravo. Rejoue et essaye de le faire en moins de ${
+            message = `Bravo tu as retrouvé tous les symboles 🎊 en ${
               Math.floor(flips / 2) + 1
             } coups`;
           }
@@ -84,6 +80,7 @@ function Game() {
       }
     }
   }
+
   function isCardChosen(image, index) {
     return chosenCardsIds?.includes(index) || openCards?.includes(image);
   }
@@ -93,7 +90,6 @@ function Game() {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-
     return array;
   }
 
@@ -111,25 +107,25 @@ function Game() {
   }, []);
 
   return (
-    <div className="game-container">
-      <div className="card-header">
+    <div className="child-game-container">
+      <div className="child-card-header">
         <h4 className="counter">Points:{points}</h4>
         <p className="flip-counter">Coups:{Math.floor(flips / 2)}</p>
         <button onClick={startOver} className="button-start-over">
           Start over
         </button>
       </div>
-      <div className="card-container">
+      <div className="child-card-container">
         {imagesArray?.map((imageObj, index) => {
           return (
             <div
-              className="col-4 col-lg-2"
+              className="child-col-4 child-col-lg-2"
               key={index}
               onClick={() => flipImage(imageObj.image, index)}
             >
-              <div className="card">
-                <div className="card-body">
-                  <p className="card-text text-center">
+              <div className="child-card">
+                <div className="child-card-body">
+                  <p className="child-card-text child-text-center">
                     {isCardChosen(imageObj.name, index) ? imageObj.name : ""}
                   </p>
                   <img
@@ -141,7 +137,7 @@ function Game() {
                     alt={
                       isCardChosen(imageObj.name, index) ? imageObj.name : ""
                     }
-                    className={`img-fluid img-fixed`}
+                    className={`child-img-fluid child-img-fixed`}
                   />
                 </div>
               </div>
@@ -152,4 +148,4 @@ function Game() {
     </div>
   );
 }
-export default Game;
+export default ChildGame;

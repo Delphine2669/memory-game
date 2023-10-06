@@ -1,24 +1,33 @@
 "use client";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import React from "react";
-import Head from "next/head";
-import Grid from "../components/Grid";
+import Header from "../components/Header";
 import Game from "../components/Game";
 import MyContext from "./MyContext";
 import "./page.css";
-import logo from "/public/logo.png";
+import ChildGame from "../components/ChildGame";
+import Home from "@/components/Homepage";
 
-export default function Home() {
+export default function App() {
   return (
-    <>
-      <main>
-        <div className="Header">
-          <img src="/logo.png" alt="" className="logo" />
-          <h1>MEMORY GAME </h1>
-        </div>
+    <div>
+      <Header />
+      <Router>
+        <NavLink to="/" className="home-navlink">
+          Home
+        </NavLink>
 
-        <Game />
-      </main>
-    </>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/level1" element={<ChildGame />} />
+          <Route path="/level2" element={<Game />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }

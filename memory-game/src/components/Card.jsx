@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { items } from "/public/Items.json";
+// import { items } from "/public/Items.json";
 import "./Card.css";
 
 const Card = () => {

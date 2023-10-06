@@ -1,0 +1,37 @@
+.level1-link {
+  color: black;
+  background-color: green;
+}
+.level1-li {
+  margin-top: 2dvh;
+}
+.level2-link {
+  color: black;
+  background-color: var(--yellow-color);
+}
+.level2-li,
+.level1-li,
+.level3-li {
+  margin-bottom: 5dvh;
+}
+.level3-li {
+  color: black;
+  background-color: red;
+  margin-left: 40dvw;
+  width: 18dvw;
+  height: 4dvh;
+  line-height: 3;
+  border-radius: 15dvw;
+}
+
+.level2-link,
+.level1-link,
+.level3-link {
+  border-radius: 15dvw;
+  font-weight: bold;
+  padding: 0.5dvw;
+  font-size: x-large;
+}
+.home-container-div {
+  text-align: center;
+}
