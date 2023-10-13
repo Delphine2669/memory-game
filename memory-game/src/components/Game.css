@@ -24,7 +24,7 @@
   padding: 2dvh 2vw;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(207, 227, 245);
+  background-color: var(--yellow-color);
   justify-content: center;
   width: 15dvw;
 }

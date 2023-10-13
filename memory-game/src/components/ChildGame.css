@@ -3,9 +3,9 @@
 .child-card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5dvw;
+  margin-left: 4dvw;
   gap: 4dvw;
-  width: 100dvw;
+  width: 90dvw;
 }
 .child-game-container {
   background-repeat: no-repeat;
@@ -13,7 +13,8 @@
   background-image: url("/assets/rainbow.jpg");
 }
 .child-img-fluid {
-  width: 13dvw;
+  aspect-ratio: 3/4;
+  width: 9dvw;
   height: 12dvh;
   border: solid 2.5dvw var(--kids-color);
   border-radius: 5px;
@@ -24,17 +25,17 @@
   padding: 2dvh 2vw;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(207, 227, 245);
+  background-color: var(--kids-blue);
   justify-content: center;
   width: 15dvw;
 }
-.button-start-over {
+.child-button-start-over {
   margin-bottom: 1dvh;
   width: 15dvw;
   height: 6dvh;
   border-radius: 2dvw;
   align-self: center;
-  color: #f0c42d;
+  color: var(--kids-color);
   background-color: black;
 }
 .child-card-header {
@@ -68,6 +69,7 @@
   }
 
   .child-img-fluid {
+    aspect-ratio: 3/4;
     width: 8dvw;
     height: 20dvh;
     border: solid 1.4dvw var(--kids-color);

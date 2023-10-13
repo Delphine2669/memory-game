@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
 
         <meta
           name="description"
-          content="Memory Game est une application react nextJs. C'est un jeu de mémoire. Vous devez retrouver les 2 cartes identiques, parmi un jeu de 16.Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
+          content="Memory Game est une application react nextJs. C'est un jeu de mémoire. Disponible en plusieurs niveaux. Vous devez retrouver toutes les paires dans le jeu. Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
         />
         <meta name="author" content=" Waheb.C Delphine.T" />
         <meta
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:description"
-          content="Memory Game est une application react nextJs. C'est un jeu de mémoire. Vous devez retrouver les 2 cartes identiques, parmi un jeu de 16.Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
+          content="Memory Game est une application react nextJs. C'est un jeu de mémoire.  Disponible en plusieurs niveaux. Vous devez retrouver toutes les paires dans le jeu.Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
         />
         <meta
           property="og:image"
@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:description"
-          content="Memory Game est une application react nextJs. C'est un jeu de mémoire. Vous devez retrouver les 2 cartes identiques, parmi un jeu de 16.Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
+          content="Memory Game est une application react nextJs. C'est un jeu de mémoire. Disponible en plusieurs niveaux. Vous devez retrouver toutes les paires, dans le jeu.Sélectionnez les. Si vous trouvez une paire, vous gagnez 2 points, sinon vous devez recommencer. La partie s'arrête lorsque vous avez découvert toutes les cartes. A vous de jouer"
         />
         <meta
           name="twitter:image"

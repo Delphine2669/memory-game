@@ -111,7 +111,7 @@ function ChildGame() {
       <div className="child-card-header">
         <h4 className="counter">Points:{points}</h4>
         <p className="flip-counter">Coups:{Math.floor(flips / 2)}</p>
-        <button onClick={startOver} className="button-start-over">
+        <button onClick={startOver} className="child-button-start-over">
           Start over
         </button>
       </div>

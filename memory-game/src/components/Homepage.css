@@ -17,9 +17,9 @@
 .level3-li {
   color: black;
   background-color: red;
-  margin-left: 40dvw;
-  width: 18dvw;
-  height: 4dvh;
+  width: 50dvw;
+  margin-left: 22dvw;
+  height: 6dvh;
   line-height: 3;
   border-radius: 15dvw;
 }
@@ -34,4 +34,32 @@
 }
 .home-container-div {
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .level1-li {
+    margin-top: 2dvh;
+  }
+
+  .level2-li,
+  .level1-li,
+  .level3-li {
+    margin-bottom: 5dvh;
+  }
+  .level3-li {
+    margin-left: 40dvw;
+    width: 18dvw;
+    height: 4dvh;
+    line-height: 3;
+    border-radius: 15dvw;
+  }
+
+  .level2-link,
+  .level1-link,
+  .level3-link {
+    border-radius: 15dvw;
+    font-weight: bold;
+    padding: 0.5dvw;
+    font-size: x-large;
+  }
 }
