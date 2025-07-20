@@ -24,5 +24,8 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
