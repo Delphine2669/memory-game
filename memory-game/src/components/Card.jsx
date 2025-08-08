@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { items } from "/public/Items.json";
+import items from "/public/Items.json";
 import "./Card.css";
 
-const Card = () => {
+export default function Card() {
   const [count, setCount] = useState(0);
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState({ items });
@@ -56,6 +56,4 @@ const Card = () => {
       </div>
     </div>
   );
-};
-
-export default Card;
+}
